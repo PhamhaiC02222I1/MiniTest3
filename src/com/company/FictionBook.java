@@ -9,7 +9,7 @@ public class FictionBook extends Book{
         this.categogy = categogy;
     }
 
-    public FictionBook(int bookCode, String name, float price, String author, String categogy) {
+    public FictionBook(int bookCode, String name, int price, String author, String categogy) {
         super(bookCode, name, price, author);
         this.categogy = categogy;
     }

@@ -3,13 +3,13 @@ package com.company;
 public class Book {
     private int bookCode;
     private String name;
-    private float price;
+    private int price;
     private String author;
 
     public Book() {
     }
 
-    public Book(int bookCode, String name, float price, String author) {
+    public Book(int bookCode, String name, int price, String author) {
         this.bookCode = bookCode;
         this.name = name;
         this.price = price;
@@ -36,7 +36,7 @@ public class Book {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

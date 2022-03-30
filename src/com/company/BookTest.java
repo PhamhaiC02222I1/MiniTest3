@@ -19,15 +19,15 @@ public class BookTest {
         for (ProgrammingBook programmingBook: programmingBooks){
             System.out.println(programmingBook);
         }
-        float sumPrice1=0;
+        int sumPrice1=0;
         for (FictionBook fictionBook: fictionBooks){
             System.out.println(fictionBook);
         }int count=0;
-        float sumPrice=0;
+        int sumPrice=0;
         for (ProgrammingBook programmingBook: programmingBooks){
             sumPrice+=programmingBook.getPrice();
 
-            if (programmingBook.getLanguage()=="Java"){
+            if (programmingBook.getLanguage().equals("Java")){
                 count++;
             }
 
@@ -36,7 +36,7 @@ public class BookTest {
             sumPrice1+=fictionBook.getPrice();
 
         }
-        float total=0;
+        int total=0;
          total=sumPrice+sumPrice1;
         System.out.println("Tong tien 10 cuon sach la: "+total+"\n"+"So sach ProgrammingBook co language Java la: "+count);
 
